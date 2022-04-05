@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function arr(){
+        let arr = [];
+        let n = +prompt('Nhap so luong phan tu mang');
+        let temp = [];
+        for(let i = 0; i < n;i++){
+            arr[i] = prompt(`so thu ${i}: `);
+        }
+        return arr;
+    }
+    function check(){
+        let b = arr();
+        let a = prompt('nhap so bat ki');
+        let s = b.indexOf(a);
+        if(s != -1){
+            alert('V is in the array');
+        }else {alert('V is not in the array');}
+    }
+    check();
+
+
+</script>
+</body>
+</html>

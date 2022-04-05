@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt('Nhap so luong phan tu mang');
+    let temp = [];
+    for(let i = 0; i < n;i++){
+        arr[i] = prompt(`so thu ${i}: `);
+    }
+    for(let i = 0; i < n; i++){
+        temp[i] = arr[n-i-1];
+    }
+    document.write(`mang chua dao nguoc la ${arr}`);
+    document.write(`mang sau khi dao nguoc la ${temp}`);
+
+</script>
+</body>
+</html>

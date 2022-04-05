@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    count = 0;
+    function arr(){
+        count++;
+        let arr = [];
+        let n = +prompt(`Nhap so luong phan tu mang ${count}`);
+        let temp = [];
+        for(let i = 0; i < n;i++){
+            arr[i] = prompt(`so thu ${i}: `);
+        }
+        return arr;
+    }
+    let a = arr();
+    let b = arr();
+    let c  = a.concat(b);
+    alert(c);
+
+</script>
+</body>
+</html>
